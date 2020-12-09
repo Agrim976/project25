@@ -26,7 +26,7 @@ class Paper{
         imageMode(CENTER);
         image(this.image,pos.x,pos.y,this.width,this.height);
 
-        if(this.body.position.x > 1050){
+        if(this.body.position.x > 950 && this.body.position.y > 400){
             Matter.Body.setStatic(this.body,true);
         }
     }
